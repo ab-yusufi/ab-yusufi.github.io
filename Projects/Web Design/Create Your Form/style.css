@@ -1,0 +1,37 @@
+body {
+   background: linear-gradient(to right, #005c97, #363795);
+}
+
+.modal-content {
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.start {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#headerStart {
+  font-family: 'Lobster', cursive;
+}
+
+#writeHead {
+  font-family: 'Cinzel', serif;
+}
+
+#formHeader {
+  height: 40px;
+  border-radius: 4px;
+}
+
+::placeholder {
+  color: #99AAAB;
+}
+
+input[type=text]:focus{
+  outline: none
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Your Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobsterfamily=Cinzel:wght@700&family=Zilla+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class="text-light">
+  <div class="modal fade text-white" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+          <p>Made By <a href="#"> AB KODER</a></p>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p>1. Enter the title and press Start.</p>
+            <p>2.<b>Add Title:</b> Add title without any input field.</p>
+            <p>3.<b>Add Text Field:</b> Add text field with a title.</p>
+            <p>4.<b>Add Radio Button:</b> Add Radio Button. <br /> Only one radio button can be selected from a group of radio buttons at one time.<br />
+            The 'value' field must be same for buttons of same group.
+            </p>
+            <p>5. <b>Add Checkbox:</b> Add a checkbox with a label.</p>
+            <p>6. <b>Add Submit Button:</b> Add submit button.</p>
+            <p>7. <i>You can also change text and background color after adding submit button.</i></p>
+            <p>8. <i>The titles are editable till adding submit button.</i></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="gotit" type="button" class="btn btn-primary" data-dismiss="modal">I Got It!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <h1 id="header" class="text-center mt-3" ></h1>
+    <div id="divStart" class="start">
+      <div class="mb-3">
+        <h1 id="headerStart" class="display-4">CREATE FORM</h1>
+      </div>
+      <div class="mb-3">
+        <h4 id="writeHead">Enter Title of Your Form</h4>
+      </div>
+      <div class="input-group d-flex justify-content-center">
+        <input id="formHeader" class="text-center w-50" type="text" name="formHeader" placeholder="Enter Title">
+        <div class="input-group-append">
+          <input id="start" class="btn btn-primary" type="submit" value="Start">
+        </div>
+      </div>
+    </div>
+    <div class="buttons d-flex justify-content-center flex-wrap align-items-center">
+      <input id="changeBack" type="button" class="btn btn-primary m-1" value="Change Background" onclick="change_back()">
+      <input id="changeText" type="button" class="btn btn-primary m-1" value="Change Text Color" onclick="change_text()">
+      <input id="finish" type="button" class="btn btn-primary m-1" value="DONE" onclick="done()">
+      <input id="addParagraph" type="submit" class="btn btn-primary m-1" value="Add Title" onclick="add_paragraph()">
+      <input id="addText" type="submit" class="btn btn-primary m-1" value="Add Text Field">
+      <input id="addRadioButton" type="submit" class="btn btn-primary m-1" value="Add Radio Button" onclick="add_radio_button()">
+      <input id="addCheckbox" type="submit" class="btn btn-primary m-1" value="Add Checkbox" onclick="add_checkbox()">
+      <input id="backButton" type='button' class="btn btn-primary m-1" onclick='back()' value="BACK">
+      <input id="addButton" type='button' class="btn btn-primary m-1" onclick='add_text()' value="ADD">
+      <input id="addPara" type="submit" class="btn btn-primary m-1" value="ADD" onclick="add_para()">
+      <input id="addRadio" type='button' class="btn btn-primary m-1" onclick='add_radio()' value="ADD">
+      <input id="addCheck" type='button' class="btn btn-primary m-1" onclick='add_check()' value="ADD">
+      <input id="addSubmitButton" type='submit' class="btn btn-primary m-1" value="Add Submit Button" onclick='add_submit_button()'>
+      <input id="addSubmit" type='submit' class="btn btn-primary m-1" value="DONE" onclick='add_submit()'>
+    </div>
+  </div>
+  <form id="form"></form>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>
